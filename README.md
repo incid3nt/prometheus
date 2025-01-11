@@ -15,6 +15,11 @@
 Требования к результату
  Прикрепите к файлу README.md скриншот systemctl status prometheus, где будет написано: prometheus.service — Prometheus Service Netology Lesson 9.4 — [Ваши ФИО]
 
+1.2 Создание пользователя prometheus:
+```
+useradd  --no-create-home --shell /bin/false prometheus
+```
+
 ```
 wget https://github.com/prometheus/prometheus/releases/download/v2.40.2/prometheus-2.40.2.linux-amd64.tar.gz
 
