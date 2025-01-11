@@ -61,7 +61,7 @@ chown prometheus:prometheus /usr/local/bin/promtool
 - nano /etc/systemd/system/prometheus.service
 ```
 [Unit]
-Description=Prometheus Service Netology Lesson 9.4
+Description=Prometheus Service Netology Lesson 9.4 - [Еноктаев Олег Владимирович]
 After=network.target
 [Service]
 User=prometheus
@@ -76,9 +76,10 @@ ExecReload=/bin/kill -HUP $MAINPID Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 ```
-1.5 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
+1.5 systemctl status prometheus.service
+![systemctl](https://github.com/incid3nt/prometheus/blob/main/img/putty_gG9QB4PZcc.png)
+
+
 
 
 ---
