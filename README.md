@@ -121,7 +121,7 @@ chown -R prometheus:prometheus /etc/prometheus/node-exporter/
 nano /etc/systemd/system/node-exporter.service
 ```
 [Unit]
-Description=Node Exporter Lesson 9.4
+Description=Node Exporter Lesson 9.4 - [Еноктаев Олег Владимирович]
 After=network.target
 [Service]
 User=prometheus
@@ -131,7 +131,12 @@ ExecStart=/etc/prometheus/node-exporter/node_exporter
 [Install]
 WantedBy=multi-user.target
 ```
-
+Включаем , добавляем в автозагрузку:
+```
+systemctl enable node-exporter.service
+systemctl start node-exporter.service
+systemctl status node-exporter.service
+```
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 2](ссылка на скриншот 2)`
 
