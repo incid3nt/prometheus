@@ -58,7 +58,23 @@ chown prometheus:prometheus /usr/local/bin/promtool
   ```
   Как видим, все успешно запустилось, но нам же не удобно будет каждый раз запускать вручную, создадим сервис:
 - nano /etc/systemd/system/prometheus.service
-
+```
+[Unit]
+Description=Prometheus Service Netology Lesson 9.4
+After=network.target
+[Service]
+User=prometheus
+Group=prometheus
+Type=simple
+ExecStart=/usr/local/bin/prometheus \
+--config.file /etc/prometheus/prometheus.yml \
+--storage.tsdb.path /var/lib/prometheus/ \
+--web.console.templates=/etc/prometheus/consoles \
+--web.console.libraries=/etc/prometheus/console_libraries
+ExecReload=/bin/kill -HUP $MAINPID Restart=on-failure
+[Install]
+WantedBy=multi-user.target
+```
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 1](ссылка на скриншот 1)`
 
