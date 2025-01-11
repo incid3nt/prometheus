@@ -137,6 +137,8 @@ systemctl enable node-exporter.service
 systemctl start node-exporter.service
 systemctl status node-exporter.service
 ```
+![nodeexporter](https://github.com/incid3nt/prometheus/blob/main/img/putty_BbZpC09M8t.png)
+
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 2](ссылка на скриншот 2)`
 
