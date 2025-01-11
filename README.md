@@ -195,17 +195,8 @@ systemctl restart prometheus.service
 1.4 Запущен:
 ![systemctl](https://github.com/incid3nt/prometheus/blob/main/img/putty_gG9QB4PZcc.png)
 
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
-
+![node](https://github.com/incid3nt/prometheus/blob/main/img/chrome_OIsaHMhK5Q.png)
+![node](https://github.com/incid3nt/prometheus/blob/main/img/chrome_QfZKZId6gd.png)
 ### Задание 4
 
 `Приведите ответ в свободной форме........`
