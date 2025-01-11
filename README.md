@@ -57,6 +57,7 @@ chown prometheus:prometheus /usr/local/bin/promtool
   --web.console.libraries=/etc/prometheus/console_libraries
   ```
   Как видим, все успешно запустилось, но нам же не удобно будет каждый раз запускать вручную, создадим сервис:
+
 1.4 Создаем сервис для prometheus
 - nano /etc/systemd/system/prometheus.service
 ```
