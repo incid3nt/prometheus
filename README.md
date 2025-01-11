@@ -188,6 +188,12 @@ scrape_configs:
     static_configs:
       - targets: ["localhost:9090", "localhost:9100"]
 ```
+1.3 перезапустим prometheus
+```
+systemctl restart prometheus.service
+```
+1.4 Запущен:
+![systemctl](https://github.com/incid3nt/prometheus/blob/main/img/putty_gG9QB4PZcc.png)
 
 ```
 Поле для вставки кода...
