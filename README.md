@@ -48,7 +48,16 @@ chown -R prometheus:prometheus /etc/prometheus/ /var/lib/prometheus/
 chown prometheus:prometheus /usr/local/bin/prometheus
 chown prometheus:prometheus /usr/local/bin/promtool
 ```
-
+Пробуем запустить:
+```
+/usr/local/bin/prometheus \
+  --config.file /etc/prometheus/prometheus.yml \
+  --storage.tsdb.path /var/lib/prometheus/ \
+  --web.console.templates=/etc/prometheus/consoles \
+  --web.console.libraries=/etc/prometheus/console_libraries
+  ```
+  Как видим, все успешно запустилось, но нам же не удобно будет каждый раз запускать вручную, создадим сервис:
+- nano /etc/systemd/system/prometheus.service
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 1](ссылка на скриншот 1)`
