@@ -101,6 +101,36 @@ WantedBy=multi-user.target
 ```
 wget https://github.com/incid3nt/prometheus/blob/main/tar/node_exporter-1.4.0.linux-amd64.tar.gz
 ```
+Распакуем:
+```
+tar xvfz node_exporter-1.4.0.linux-amd64.tar.gz
+```
+Создадим папку для node-exporter
+```
+mkdir /etc/prometheus/node-exporter
+```
+Скопируем:
+```
+cp ./node_exporter /etc/prometheus/node-exporter/
+```
+Выдаем права:
+```
+chown -R prometheus:prometheus /etc/prometheus/node-exporter/
+```
+1.3 Сервис для node-exporter
+nano /etc/systemd/system/node-exporter.service
+```
+[Unit]
+Description=Node Exporter Lesson 9.4
+After=network.target
+[Service]
+User=prometheus
+Group=prometheus
+Type=simple
+ExecStart=/etc/prometheus/node-exporter/node_exporter
+[Install]
+WantedBy=multi-user.target
+```
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 2](ссылка на скриншот 2)`
