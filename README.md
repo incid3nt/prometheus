@@ -137,6 +137,7 @@ systemctl enable node-exporter.service
 systemctl start node-exporter.service
 systemctl status node-exporter.service
 ```
+1.4 
 ![nodeexporter](https://github.com/incid3nt/prometheus/blob/main/img/putty_BbZpC09M8t.png)
 
 `При необходимости прикрепитe сюда скриншоты
