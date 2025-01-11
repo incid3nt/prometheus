@@ -39,7 +39,16 @@ cp ./prometheus promtool /usr/local/bin
 cp -R ./console_libraries/ /etc/prometheus/
 cp -R ./consoles/ /etc/prometheus/
 cp ./prometheus.yml /etc/prometheus/
+cp ./prometheus /usr/local/bin
+cp ./promtool /usr/local/bin
 ```
+выдаем нужные права:
+```
+chown -R prometheus:prometheus /etc/prometheus/ /var/lib/prometheus/
+chown prometheus:prometheus /usr/local/bin/prometheus
+chown prometheus:prometheus /usr/local/bin/promtool
+```
+
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 1](ссылка на скриншот 1)`
