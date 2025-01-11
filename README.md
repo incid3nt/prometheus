@@ -203,16 +203,9 @@ systemctl restart prometheus.service
 
 ![grafana](https://github.com/incid3nt/prometheus/blob/main/img/chrome_shwZ0JtPAA.png)
 
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
+### Задание 5
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+Интегрируйте Grafana и Prometheus.
 
 ```bash
 root@prometheus:~# wget https://github.com/prometheus/prometheus/releases/downlo                                             ad/v2.40.2/prometheus-2.40.2.linux-amd64.tar.gz
