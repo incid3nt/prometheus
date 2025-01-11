@@ -19,6 +19,10 @@
 ```
 useradd  --no-create-home --shell /bin/false prometheus
 ```
+Скачаем prometheus:
+```
+wget https://github.com/incid3nt/prometheus/blob/main/tar/prometheus-2.40.2.linux-amd64.tar.gz
+```
 
 ```
 wget https://github.com/prometheus/prometheus/releases/download/v2.40.2/prometheus-2.40.2.linux-amd64.tar.gz
