@@ -24,14 +24,7 @@ useradd  --no-create-home --shell /bin/false prometheus
 wget https://github.com/incid3nt/prometheus/blob/main/tar/prometheus-2.40.2.linux-amd64.tar.gz
 ```
 
-```
-wget https://github.com/prometheus/prometheus/releases/download/v2.40.2/prometheus-2.40.2.linux-amd64.tar.gz
 
-....
-....
-....
-....
-```
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 1](ссылка на скриншот 1)`
