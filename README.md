@@ -27,6 +27,12 @@ wget https://github.com/incid3nt/prometheus/blob/main/tar/prometheus-2.40.2.linu
 ```
 tar xvfz prometheus-2.40.2.linux-amd64.tar.gz
 ```
+посмотрим содержимое директории:
+```
+root@prometheus:~/prometheus-2.40.2.linux-amd64# ls
+console_libraries  LICENSE  prometheus      promtool
+consoles           NOTICE   prometheus.yml
+```
 
 
 `При необходимости прикрепитe сюда скриншоты
