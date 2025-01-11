@@ -33,7 +33,13 @@ root@prometheus:~/prometheus-2.40.2.linux-amd64# ls
 console_libraries  LICENSE  prometheus      promtool
 consoles           NOTICE   prometheus.yml
 ```
-
+скопируем файлы в нужные дирректории:
+```
+cp ./prometheus promtool /usr/local/bin
+cp -R ./console_libraries/ /etc/prometheus/
+cp -R ./consoles/ /etc/prometheus/
+cp ./prometheus.yml /etc/prometheus/
+```
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 1](ссылка на скриншот 1)`
