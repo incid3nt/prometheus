@@ -97,6 +97,7 @@ WantedBy=multi-user.target
 Требования к результату
 Прикрепите к файлу README.md скриншот systemctl status node-exporter, где будет написано: node-exporter.service — Node Exporter Netology Lesson 9.4 — [Ваши ФИО]
 
+1.2 Скачаем node exporter
 ```
 wget https://github.com/incid3nt/prometheus/blob/main/tar/node_exporter-1.4.0.linux-amd64.tar.gz
 ```
