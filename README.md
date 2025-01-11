@@ -19,7 +19,7 @@
 ```
 useradd  --no-create-home --shell /bin/false prometheus
 ```
-Скачаем prometheus:
+1.3 Скачаем prometheus:
 ```
 wget https://github.com/incid3nt/prometheus/blob/main/tar/prometheus-2.40.2.linux-amd64.tar.gz
 ```
@@ -57,6 +57,7 @@ chown prometheus:prometheus /usr/local/bin/promtool
   --web.console.libraries=/etc/prometheus/console_libraries
   ```
   Как видим, все успешно запустилось, но нам же не удобно будет каждый раз запускать вручную, создадим сервис:
+1.4 Создаем сервис для prometheus
 - nano /etc/systemd/system/prometheus.service
 ```
 [Unit]
@@ -75,6 +76,7 @@ ExecReload=/bin/kill -HUP $MAINPID Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 ```
+1.5 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 1](ссылка на скриншот 1)`
 
